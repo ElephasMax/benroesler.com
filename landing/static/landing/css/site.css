@@ -1,0 +1,29 @@
+body{
+    background-color: #373E40;
+}
+
+h1{
+    font: 2.5rem Inconsolata, monospace;
+    font-family: 'Courier New', monospace;
+    color: #E22EFF;
+}
+
+.text{
+    font: 1.0rem Inconsolata, monospace;
+    font-family: 'Courier New', monospace;
+    color: #E22EFF;
+}
+
+.accent{
+    font: 1.0rem Inconsolata, monospace;
+    font-family: 'Courier New', monospace;    
+    color: #63B8FF;
+
+}
+
+.perfect-centering {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }

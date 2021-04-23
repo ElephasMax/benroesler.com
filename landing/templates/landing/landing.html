@@ -1,0 +1,37 @@
+{% extends "landing/base.html" %}
+
+    {% block content %}
+    <html>
+        <body>
+            <div class="perfect-centering text-center">
+
+             <pre class="h3" style="color: #ff8243">     
+    _ __ ___   __ _ _ __   __ _  ___  
+    | '_ ` _ \ / _` | '_ \ / _` |/ _ \ 
+    | | | | | | (_| | | | | (_| | (_) |
+    |_| |_| |_|\__,_|_| |_|\__, |\___/ 
+                            |___/       
+                </pre>
+    
+                <div class="text">
+                <h1>{{name}}</h1>
+                <a href="mailto:{{email}}"> {{email}} </a>
+                </div> 
+                <br><br>
+    
+    
+    
+
+                {% for dict in core %}
+                    {% for x in dict.items %}
+                        <a class='text' href="{{x.0}}">{{x.1}}</a>
+                    {% endfor %}
+                    {% if not forloop.last %}
+                        <em class="accent"> // </em>
+                    {% endif %}
+                {% endfor %}
+    
+            </div>
+        </body>
+    </html>
+{% endblock content %}
