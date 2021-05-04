@@ -16,10 +16,10 @@
             <div class="jumbotron-fluid bg-transparent" style:"max-width:100%">
                 {% for dict in core %}
                     {% for x in dict.items %}
-                        <a class='purple' href="{{x.0}}">{{x.1}}</a>
+                        <a class="purple1" href="{{x.0}}">{{x.1}}</a>
                     {% endfor %}
                     {% if not forloop.last %}
-                        <em class="blue"> // </em>
+                        <em class="blue1"> // </em>
                     {% endif %}
                 {% endfor %}
                 </div>
