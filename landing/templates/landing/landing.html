@@ -6,17 +6,20 @@
             <div class="jumbotron-fluid bg-transparent text-center perfect-centering" style:"max-width:100%">
             {% include "landing/mango.html" %}
             <br>
-            <div class="text">
+            <div class="mango">
                 <h1>{{name}}</h1>
-                <a href="mailto:{{email}}"> {{email}} </a>
+                <a class="mango" href="mailto:{{email}}"> Email: {{email}} </a>
+                <br>
+                <a class="mango" href="tel:{{phone}}"> Phone: {{phone}} </a>
             </div> 
+            <br>
             <div class="jumbotron-fluid bg-transparent" style:"max-width:100%">
                 {% for dict in core %}
                     {% for x in dict.items %}
-                        <a class='text' href="{{x.0}}">{{x.1}}</a>
+                        <a class='purple' href="{{x.0}}">{{x.1}}</a>
                     {% endfor %}
                     {% if not forloop.last %}
-                        <em class="accent"> // </em>
+                        <em class="blue"> // </em>
                     {% endif %}
                 {% endfor %}
                 </div>
