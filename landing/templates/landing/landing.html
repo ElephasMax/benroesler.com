@@ -1,29 +1,29 @@
 {% extends "landing/base.html" %}
 
     {% block content %}
-    <html>
-        <body>
-            <div class="jumbotron-fluid bg-transparent text-center perfect-centering" style:"max-width:100%">
-            {% include "landing/mango.html" %}
+<html>
+    <body>
+        <div class="jumbotron-fluid bg-transparent text-center perfect-centering">
+        {% include "landing/mango.html" %}
+        <br>
+        <div>
+            <h1>{{name}}</h1>
+            <a class="mango" href="mailto:{{email}}"> Email: {{email}} </a>
             <br>
-            <div class="mango">
-                <h1>{{name}}</h1>
-                <a class="mango" href="mailto:{{email}}"> Email: {{email}} </a>
-                <br>
-                <a class="mango" href="tel:{{phone}}"> Phone: {{phone}} </a>
-            </div> 
-            <br>
-            <div class="jumbotron-fluid bg-transparent" style:"max-width:100%">
-                {% for dict in core %}
-                    {% for x in dict.items %}
-                        <a class="purple1" href="{{x.0}}">{{x.1}}</a>
-                    {% endfor %}
-                    {% if not forloop.last %}
-                        <em class="blue1"> // </em>
-                    {% endif %}
+            <a class="mango" href="tel:{{phone}}"> Phone: {{phone}} </a>
+        </div> 
+        <br>
+        <div class="jumbotron-fluid bg-transparent">
+            {% for dict in core %}
+                {% for x in dict.items %}
+                    <a class="purple" href="{{x.0}}">{{x.1}}</a>
                 {% endfor %}
-                </div>
+                {% if not forloop.last %}
+                    <em class="blue">//</em>
+                {% endif %}
+            {% endfor %}
             </div>
-        </body>
-    </html>
+        </div>
+    </body>
+</html>
 {% endblock content %}
