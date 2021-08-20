@@ -9,7 +9,7 @@ def home(request):
         'name'  : 'Ben Roesler',
 
         'core' : [
-            { 'https://drive.google.com/file/d/1B0L9ru16BjfqfkHDyGhQrTOfh0a14A_E/view?usp=sharing' : 'Resume' },
+            { 'https://drive.google.com/file/d/1fDSYvaK2_9ritGKq1Zmhs1qOQUh3c9i6/view?usp=sharing' : 'Resume' },
             { 'https://drive.google.com/drive/folders/146NSwf5Le2YLQEpSQfj7ZnaJ8irOrgW-?usp=sharing' : 'Certifications'},
             { 'https://www.linkedin.com/in/bennyroesler/' : 'Linkedin' },
         ],}

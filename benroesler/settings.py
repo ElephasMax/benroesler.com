@@ -113,7 +113,7 @@ USE_TZ = True
 # SECRET_KEY = os.environ['SECRET_KEY']
 SECRET_KEY = get_random_secret_key()
 ADMIN_ENABLED = False
-DEBUG = True
+DEBUG = False
 
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True 
