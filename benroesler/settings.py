@@ -123,4 +123,4 @@ CSRF_COOKIE_SECURE = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "static/") #puts static in project root
+STATIC_ROOT = os.path.join(BASE_DIR, "/opt/benroesler.com/static/") #puts static in project root
