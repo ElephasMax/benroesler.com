@@ -1,9 +1,8 @@
-# personal_website
+# benroesler.com
 Personal website built with Django and Bootstrap, being served by nginx
 
-# Docker Setup
-This repo can become a submodule for my django-gunicorn-nginx project. See that repo for instructions
-
+# Docker Setup (Preferred Method)
+See https://github.com/ElephasMax/benroesler-dockerized
 
 # Setup
 
