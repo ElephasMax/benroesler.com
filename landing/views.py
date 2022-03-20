@@ -11,8 +11,8 @@ def home(request):
         'name'  : 'Ben Roesler',
 
         'core' : [
-            { 'https://benroesler.com/dropbox/carrer/Resume.pdf' : 'Resume' },
-            { 'https://benroesler.com/dropbox/carrer/certificates/' : 'Certifications'},
+            { 'https://benroesler.com/dropbox/career/Resume.pdf' : 'Resume' },
+            { 'https://benroesler.com/dropbox/career/certificates/' : 'Certifications'},
             { 'https://www.linkedin.com/in/bennyroesler/' : 'Linkedin' },
         ],}
     return render(request,'landing/landing.html', context) 
