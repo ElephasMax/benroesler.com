@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path, os
 from django.core.management.utils import get_random_secret_key
-
+import sys
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -123,4 +123,10 @@ CSRF_COOKIE_SECURE = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "/opt/benroesler.com/static/") #puts static in project root
+
+# print(BASE_DIR)
+# print(sys.argv[0])
+if sys.argv[0] == 'manage.py':
+    STATIC_ROOT = os.path.join(BASE_DIR, "static/") #puts static in project root
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, "/opt/benroesler.com/static/") #puts static in project root
