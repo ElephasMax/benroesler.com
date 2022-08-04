@@ -129,4 +129,4 @@ STATIC_URL = '/static/'
 if sys.argv[0] == 'manage.py':
     STATIC_ROOT = os.path.join(BASE_DIR, "static/") #puts static in project root
 else:
-    STATIC_ROOT = os.path.join(BASE_DIR, "/opt/benroesler.com/static/") #puts static in project root
+    STATIC_ROOT = os.path.join(BASE_DIR, "/app/static/") #puts static in project root
