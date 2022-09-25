@@ -4,11 +4,12 @@ from django.shortcuts import render
 # Create your views here.
 def home(request):
     context = {        
-        'title' : 'Ben Roesler',
+        'title' : 'Benny Roesler',
+        'subtitle' : 'Security Researcher, Hack The Box Enthusiast, Adventurer',
         'email' : 'bennytroesler@gmail.com',
         'pgpURL' : "https://benroesler.com/pgp",
         'phone' : '(847) 571-2749',
-        'name'  : 'Ben Roesler',
+        'name'  : 'Benny Roesler',
 
         'core' : [
             { 'https://benroesler.com/dropbox/career/Resume.pdf' : 'Resume' },

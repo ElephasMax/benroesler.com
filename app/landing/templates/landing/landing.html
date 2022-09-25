@@ -8,10 +8,16 @@
         <br>
         <div>
             <h1>{{name}}</h1>
+            <a class="green"> {{subtitle}} </a>
+            <br>
             <a class="mango" href="mailto:{{email}}"> Email: {{email}} </a> <a class="blue" href="{{pgpURL}}"> PGP</a>
             <br>
             <a class="mango" href="tel:{{phone}}"> Phone: {{phone}} </a>
-        </div> 
+            <br>
+            <a href="https://twitter.com/0xElephas"><i class="fa-brands fa-twitter fa-xl"></i>
+            <a href="https://www.linkedin.com/in/bennyroesler/"><i class="fa-brands fa-linkedin fa-xl"></i>
+            <a href="https://0xelephas.medium.com/"><i class="fa-brands fa-medium fa-xl"></i>
+            </div> 
         <br>
         <div class="jumbotron-fluid bg-transparent">
             {% for dict in core %}

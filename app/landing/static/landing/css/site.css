@@ -1,34 +1,42 @@
-body{
+body {
     background-color: #373E40;
 }
 
-h1{
+h1 {
     font: 2.5rem Inconsolata, monospace;
     font-family: 'Courier New', monospace;
     color: #E22EFF;
 }
 
-.purple{
+.green {
+    font: 1.0rem Inconsolata, monospace;
+    font-family: 'Courier New', monospace;
+    color: #4FE859;
+}
+
+.purple {
     font: 1.0rem Inconsolata, monospace;
     font-family: 'Courier New', monospace;
     color: #E22EFF;
 }
 
-.blue{
+.blue {
     font: 1.0rem Inconsolata, monospace;
-    font-family: 'Courier New', monospace;    
+    font-family: 'Courier New', monospace;
     color: #63B8FF;
 
 }
-.mango{
+
+.mango {
     font: 1.0rem Inconsolata, monospace;
-    font-family: 'Courier New', monospace;    
+    font-family: 'Courier New', monospace;
     color: #ff8243;
 
 }
+
 .perfect-centering {
     position: absolute;
     top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-  }
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
