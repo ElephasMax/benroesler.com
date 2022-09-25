@@ -8,7 +8,7 @@ FROM python:3.8
 LABEL maintainer="Benny Roesler <bennytroesler@gmail.com>"
 
 COPY ./app /app
-
+RUN ls /app
 WORKDIR /app
 
 RUN pip install --no-cache-dir -r requirements.txt
