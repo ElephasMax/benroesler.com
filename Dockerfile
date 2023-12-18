@@ -3,7 +3,7 @@
 
 # Run
 ## sudo docker run -t -i -d -p 8000:8000 --name benroesler.com --rm benroesler.com
-FROM python:3.8
+FROM python:latest
 
 LABEL maintainer="Benny Roesler <bennytroesler@gmail.com>"
 
